@@ -1,0 +1,33 @@
+----ESERCIZIO PASTICCERIA----
+Link lavagna CANVA per UML: https://www.canva.com/design/DAF-1v9-p0M/_K0-DyS85VDQka4MPFf9Hg/view?utm_content=DAF-1v9-p0M&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
+
+--TRACCIA--
+UML
+CODICE 
+RAGIONAMENTO PER ISCRITTO
+
+3 sprint da 30m (90m tot);
+Mono-classe e MEtodo main: il programma deve essere composto da una sola classe Java e tutto il codice
+deve essere inserito all'interno del metodo main.
+Liste di ingredienti: dovrai definire quattro liste di stringhe, ognuna rappresentante una categoria di 
+ingredienti per la composizione del dolce:
+
+-BASI: pan di spagna, frolla, crumble ecc
+-RIPIENI: come Crema pasticcera, Marmellata, Nutella, Crema ecc
+-FRUTTA: Fragole, Banane, More  ecc 
+-DECORAZIONE: Glassa, Zucchero, Panna ecc
+
+Selezione casuale degli ingredienti: il programma deve selezionare casualmente un ingrediente 
+da ognuna delle 4 liste per comporre il dolce. La selezione deve avvenire ogni volta che il programma viene eseguito.
+
+Output: dopo aver selezionato gli ingredienti, il programma deve stampare su console la composizione del dolce
+elencando gli ingredienti scelti per categoria.
+
+--SPIEGAZIONE--
+Il programma si basa su una scelta dell'utente in quattro categorie diverse di scelte
+Ognuna di questa gli permette di costruire man mano la sua "cake".
+Deve fare attenzione, perchè gli elementi sono limitati e se sbaglia a scegliere
+è costretto a fare un passo indietro e scegliere dinuovo.
+Alla fine di tutto verrà stampato un messaggio con la torta in base alle scelte dell'utente!
+Goditi la torta! 🍰
