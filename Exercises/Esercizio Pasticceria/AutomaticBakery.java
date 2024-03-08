@@ -3,20 +3,17 @@ import java.util.Scanner;
 
 public class AutomaticBakery {
   public static void main(String[] args) {
+    // String arrays
     String[] base = { "Crumble", "Bisquit", "Sponge Cake" };
     String[] stuffing = { "Pistachio Cream", "Nutella", "Egg Cream" };
     String[] fruit = { "Banana", "Strawberry", "No fruit" };
     String[] topping = { "Powder Sugar", "Sprinkles", "No topping" };
-
+    // Scannar
     Scanner myScan = new Scanner(System.in);
+    // Object in which elements, one for each previous arrays, will be added every
+    // time the user makes a choice
     ArrayList<String> cake = new ArrayList<String>();
 
-    /*
-     * 
-     * int userStuffing = myScan.nextInt();
-     * int userFruit = myScan.nextInt();
-     * int userTopping = myScan.nextInt();
-     */
     System.out.println("");
     System.out.println("Welcome to the best bakery in town!");
     System.out.println("To make a cake, you must choose one of each of the following choices to compose your cake!");
@@ -37,13 +34,13 @@ public class AutomaticBakery {
     }
     switch (userBase) {
       case 1:
-        System.out.println("You chose the following base: " + base[userBase - 1]);
+        System.out.println("You chose the following base: " + base[userBase - 1]);// base[0]
         break;
       case 2:
-        System.out.println("You chose the following base: " + base[userBase - 1]);
+        System.out.println("You chose the following base: " + base[userBase - 1]);// base[1]
         break;
       case 3:
-        System.out.println("You chose the following base: " + base[userBase - 1]);
+        System.out.println("You chose the following base: " + base[userBase - 1]);// base[2]
         break;
     }
     cake.add(base[userBase - 1]);
@@ -57,7 +54,7 @@ public class AutomaticBakery {
       System.out.print("[" + (b + 1) + "]" + stuffing[b] + " ");
     }
     int userStuffing = myScan.nextInt();
-    // This condition occurs when user chooses a number < 1 or > 3.
+    // This condition occurs when user chooses a number <1 or >3.
     if (userStuffing < 1 || userStuffing > 3) {
       System.out.println("The option you entered doesn't exsist! Choose again!");
       userStuffing = myScan.nextInt();
@@ -84,7 +81,7 @@ public class AutomaticBakery {
       System.out.print("[" + (b + 1) + "]" + fruit[b] + " ");
     }
     int userFruit = myScan.nextInt();
-    // This condition occurs when user chooses a number < 1 or > 3.
+    // This condition occurs when user chooses a number <1 or >3.
     if (userFruit < 1 || userFruit > 3) {
       System.out.println("The option you entered doesn't exsist! Choose again!");
       userFruit = myScan.nextInt();
@@ -111,7 +108,7 @@ public class AutomaticBakery {
       System.out.print("[" + (b + 1) + "]" + topping[b] + " ");
     }
     int userTopping = myScan.nextInt();
-    // This condition occurs when user chooses a number < 1 or > 3.
+    // This condition occurs when user chooses a number <1 or >3.
     if (userTopping < 1 || userTopping > 3) {
       System.out.println("The option you entered doesn't exsist! Choose again!");
       userTopping = myScan.nextInt();
