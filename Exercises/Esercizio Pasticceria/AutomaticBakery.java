@@ -10,8 +10,8 @@ public class AutomaticBakery {
     String[] topping = { "Powder Sugar", "Sprinkles", "No topping" };
     // Scannar
     Scanner myScan = new Scanner(System.in);
-    // Object in which elements, one for each previous arrays, will be added every
-    // time the user makes a choice
+
+    // AL in which elements, one for each previous arrays, will be added
     ArrayList<String> cake = new ArrayList<String>();
 
     System.out.println("");
@@ -43,9 +43,9 @@ public class AutomaticBakery {
         System.out.println("You chose the following base: " + base[userBase - 1]);// base[2]
         break;
     }
-    cake.add(base[userBase - 1]);
-    // System.out.println(cake.get(0)); // to check if the item has been pushed into
-    // ArrayList cake
+    cake.add(base[userBase - 1]);// add the chosen element to cake AL
+    // System.out.println(cake.get(0));
+    // to check if the item has been added
 
     // User Stuffing choice
     System.out.println("");
@@ -61,18 +61,18 @@ public class AutomaticBakery {
     }
     switch (userStuffing) {
       case 1:
-        System.out.println("You chose the following stuffing: " + stuffing[userStuffing - 1]);
+        System.out.println("You chose the following stuffing: " + stuffing[userStuffing - 1]);// stuffing[0]
         break;
       case 2:
-        System.out.println("You chose the following stuffing: " + stuffing[userStuffing - 1]);
+        System.out.println("You chose the following stuffing: " + stuffing[userStuffing - 1]);// stuffing[1]
         break;
       case 3:
-        System.out.println("You chose the following stuffing: " + stuffing[userStuffing - 1]);
+        System.out.println("You chose the following stuffing: " + stuffing[userStuffing - 1]);// stuffing[2]
         break;
     }
-    cake.add(stuffing[userStuffing - 1]);
-    // System.out.println(cake.get(1)); // to check if the item has been pushed into
-    // ArrayList cake
+    cake.add(stuffing[userStuffing - 1]);// add the chosen element to cake AL
+    // System.out.println(cake.get(1));
+    // to check if the item has been added
 
     // User Fruit choice
     System.out.println("");
@@ -88,18 +88,18 @@ public class AutomaticBakery {
     }
     switch (userFruit) {
       case 1:
-        System.out.println("You chose the following fruit: " + fruit[userFruit - 1]);
+        System.out.println("You chose the following fruit: " + fruit[userFruit - 1]);// fruit[0]
         break;
       case 2:
-        System.out.println("You chose the following fruit: " + fruit[userFruit - 1]);
+        System.out.println("You chose the following fruit: " + fruit[userFruit - 1]);// fruit[1]
         break;
       case 3:
-        System.out.println("You chose to not put fruit");
+        System.out.println("You chose to not put fruit");// fruit[2]
         break;
     }
-    cake.add(fruit[userFruit - 1]);
-    // System.out.println(cake.get(2)); // to check if the item has been pushed into
-    // ArrayList cake
+    cake.add(fruit[userFruit - 1]);// add the chosen element to cake AL
+    // System.out.println(cake.get(2));
+    // to check if the item has been added
 
     // User Topping choice
     System.out.println("");
@@ -115,18 +115,18 @@ public class AutomaticBakery {
     }
     switch (userTopping) {
       case 1:
-        System.out.println("You chose the following topping: " + topping[userTopping - 1]);
+        System.out.println("You chose the following topping: " + topping[userTopping - 1]);// topping[0]
         break;
       case 2:
-        System.out.println("You chose the following topping: " + topping[userTopping - 1]);
+        System.out.println("You chose the following topping: " + topping[userTopping - 1]);// topping[1]
         break;
       case 3:
-        System.out.println("You chose to not put topping");
+        System.out.println("You chose to not put topping");// topping[2]
         break;
     }
-    cake.add(topping[userTopping - 1]);
-    // System.out.println(cake.get(2)); // to check if the item has been pushed into
-    // ArrayList cake
+    cake.add(topping[userTopping - 1]);// add the chosen element to cake AL
+    // System.out.println(cake.get(2));
+    // to check if the item has been added
     System.out.println("");
     System.out.println("Your cake is now ready!");
     System.out.println("Your cake has " + cake.get(0) + " as base, " + cake.get(1) + " as filling, " + cake.get(2)
