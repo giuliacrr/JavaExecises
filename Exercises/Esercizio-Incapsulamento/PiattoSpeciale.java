@@ -63,4 +63,8 @@ public class PiattoSpeciale {
     this.prezzoFarcitura = prezzoFarcitura;
   }
 
+  public int getTotalePiatto() {
+    return totalePiatto;
+  }
+
 }
