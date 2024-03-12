@@ -27,7 +27,7 @@ public class Menù {
         System.out.println("Hai scelto pane " + paneType[userPaneScelta - 1]);
         break;
       default:
-        System.out.println("Questo valore non esiste.");
+        System.out.println("Questo valore non esiste.");// Fare in modo di riprovare la scelta
     }
 
     // Stampo i tipi di farciture con prezzo
@@ -47,7 +47,7 @@ public class Menù {
         System.out.println("Hai scelto pane " + paneType[userFarcituraScelta - 1]);
         break;
       default:
-        System.out.println("Questo valore non esiste.");
+        System.out.println("Questo valore non esiste."); // Fare in modo di riprovare la scelta
     }
 
     PiattoSpeciale myPiattoExample = new PiattoSpeciale("esempio", 1, "esempio2", 3);
