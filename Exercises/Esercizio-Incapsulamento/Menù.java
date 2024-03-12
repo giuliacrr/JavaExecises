@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class Menù {
@@ -38,13 +38,13 @@ public class Menù {
     int userFarcituraScelta = myScan.nextInt(); // Scelgo una delle 3
     switch (userFarcituraScelta) {
       case 1:
-        System.out.println("Hai scelto pane " + paneType[userFarcituraScelta - 1]);
+        System.out.println("Hai scelto la seguente farcitura: " + farcituraType[userFarcituraScelta - 1]);
         break;
       case 2:
-        System.out.println("Hai scelto pane " + paneType[userFarcituraScelta - 1]);
+        System.out.println("Hai scelto la seguente farcitura: " + farcituraType[userFarcituraScelta - 1]);
         break;
       case 3:
-        System.out.println("Hai scelto pane " + paneType[userFarcituraScelta - 1]);
+        System.out.println("Hai scelto la seguente farcitura: " + farcituraType[userFarcituraScelta - 1]);
         break;
       default:
         System.out.println("Questo valore non esiste."); // Fare in modo di riprovare la scelta
@@ -53,8 +53,11 @@ public class Menù {
     PiattoSpeciale myPiattoExample = new PiattoSpeciale("esempio", 1, "esempio2", 3);
     PiattoSpeciale myPiatto = new PiattoSpeciale(paneType[userPaneScelta - 1], panePrice[userPaneScelta - 1],
         farcituraType[userFarcituraScelta - 1], farcituraPrezzo[userFarcituraScelta - 1]);
-    System.out.println("Il tuo piatto è composto da pane " + myPiatto.getTipoPane() + " con "
-        + myPiatto.getTipoFarcitura() + " come farcitura.\nBuon appetito!");
-    System.out.println("Il prezzo totale del tuo piatto è di " + myPiatto.getTotalePiatto());
+    System.out.println("-----\nIl tuo piatto è composto da pane " + myPiatto.getTipoPane() + " con "
+        + myPiatto.getTipoFarcitura() + " come farcitura.\nBuon appetito!\n-----");
+    System.out.println("Il prezzo totale del tuo piatto è di " + myPiatto.getTotalePiatto() + "$ (Pane "
+        + paneType[userPaneScelta - 1] + " " + panePrice[userPaneScelta - 1] + "$ " + "+ farcitura "
+        + farcituraType[userFarcituraScelta - 1] + " " + farcituraPrezzo[userFarcituraScelta - 1]
+        + "$ + 1$ supplemento)");
   }
 }
