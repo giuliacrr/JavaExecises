@@ -1,6 +1,6 @@
 public class Tablet extends DispositivoElettronico {
-  float p;
-  int iddì;
+  private float p;
+  private int iddì;
 
   public void avviaApplicazione() {
     System.out.println("I tuoi punti ammontano a: " + p + " (ID:" + iddì + ")");
