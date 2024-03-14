@@ -1,6 +1,6 @@
 public class Tablet extends DispositivoElettronico {
   private float p;
-  private int iddì;
+  private int iddì = 0;
 
   public void avviaApplicazione() {
     System.out.println("I tuoi punti ammontano a: " + p + " (ID:" + iddì + ")");
@@ -18,6 +18,9 @@ public class Tablet extends DispositivoElettronico {
     this.iddì = iddì;
   }
 
+  // Come gli dico si di incrementare id ma ad ogni elemento di arraylist names?
+  // Magari con un metodo in DispositivoElettronico facendo iddi++ ad ogni ciclo
+  // di nomi? ANCORA NON FATTO
   public int getIddì() {
     return iddì++;
   }
